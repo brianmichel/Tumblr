@@ -1,4 +1,6 @@
 # Xcode
+Pods/*
+DerivedData/*
 build/*
 *.pbxuser
 !default.pbxuser

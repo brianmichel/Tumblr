@@ -8,15 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		722CD42415A0DC740022FC30 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 722CD42315A0DC740022FC30 /* Foundation.framework */; };
-		722CD42A15A0DC740022FC30 /* Tumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 722CD42915A0DC740022FC30 /* Tumblr.m */; };
+		722CD45215A0F2120022FC30 /* Tumblr.h in Headers */ = {isa = PBXBuildFile; fileRef = 722CD42815A0DC740022FC30 /* Tumblr.h */; };
+		722CD45415A0F2370022FC30 /* Tumblr.m in Sources */ = {isa = PBXBuildFile; fileRef = 722CD42915A0DC740022FC30 /* Tumblr.m */; };
+		A73447DD126C4D638149BF15 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AFF5F691B8304798B2B559BA /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08C4CE0A5B494E5491B6F773 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = SOURCE_ROOT; };
 		722CD42015A0DC740022FC30 /* libTumblr.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libTumblr.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		722CD42315A0DC740022FC30 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		722CD42715A0DC740022FC30 /* Tumblr-Prefix.pch */ = {isa = PBXFileReference; path = "Tumblr-Prefix.pch"; sourceTree = "<group>"; };
-		722CD42815A0DC740022FC30 /* Tumblr.h */ = {isa = PBXFileReference; path = Tumblr.h; sourceTree = "<group>"; };
+		722CD42315A0DC740022FC30 /* Foundation.framework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		722CD42715A0DC740022FC30 /* Tumblr-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tumblr-Prefix.pch"; sourceTree = "<group>"; };
+		722CD42815A0DC740022FC30 /* Tumblr.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tumblr.h; sourceTree = "<group>"; };
 		722CD42915A0DC740022FC30 /* Tumblr.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tumblr.m; sourceTree = "<group>"; };
+		722CD43F15A0F1520022FC30 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		722CD44115A0F1520022FC30 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		722CD45515A0F36E0022FC30 /* libPods.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libPods.a; path = "Pods/build/Release-iphoneos/libPods.a"; sourceTree = "<group>"; };
+		AFF5F691B8304798B2B559BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -25,6 +32,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				722CD42415A0DC740022FC30 /* Foundation.framework in Frameworks */,
+				A73447DD126C4D638149BF15 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -34,9 +42,11 @@
 		722CD41515A0DC740022FC30 = {
 			isa = PBXGroup;
 			children = (
+				722CD45515A0F36E0022FC30 /* libPods.a */,
 				722CD42515A0DC740022FC30 /* Tumblr */,
 				722CD42215A0DC740022FC30 /* Frameworks */,
 				722CD42115A0DC740022FC30 /* Products */,
+				08C4CE0A5B494E5491B6F773 /* Pods.xcconfig */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,6 +62,9 @@
 			isa = PBXGroup;
 			children = (
 				722CD42315A0DC740022FC30 /* Foundation.framework */,
+				AFF5F691B8304798B2B559BA /* libPods.a */,
+				722CD43F15A0F1520022FC30 /* SenTestingKit.framework */,
+				722CD44115A0F1520022FC30 /* UIKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -81,6 +94,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				722CD45215A0F2120022FC30 /* Tumblr.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -94,6 +108,7 @@
 				722CD41C15A0DC740022FC30 /* Sources */,
 				722CD41D15A0DC740022FC30 /* Frameworks */,
 				722CD41E15A0DC740022FC30 /* Headers */,
+				7D6A3FE7A4374141B2DB16DC /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -129,12 +144,29 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		7D6A3FE7A4374141B2DB16DC /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		722CD41C15A0DC740022FC30 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				722CD42A15A0DC740022FC30 /* Tumblr.m in Sources */,
+				722CD45415A0F2370022FC30 /* Tumblr.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -185,6 +217,7 @@
 		};
 		722CD42E15A0DC740022FC30 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C4CE0A5B494E5491B6F773 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Tumblr.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -197,6 +230,7 @@
 		};
 		722CD42F15A0DC740022FC30 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08C4CE0A5B494E5491B6F773 /* Pods.xcconfig */;
 			buildSettings = {
 				DSTROOT = /tmp/Tumblr.dst;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -226,6 +260,7 @@
 				722CD42F15A0DC740022FC30 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -1,0 +1,5 @@
+PODS:
+  - NXOAuth2Client (1.1.0)
+
+DEPENDENCIES:
+  - NXOAuth2Client (~> 1.1.0)
